@@ -1,0 +1,17 @@
+/* Reset CSS para remover margens e paddings padrão */
+
+/* Define margens e paddings como zero para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a fonte e tamanho de texto padrão */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Adicione outras configurações de reset, se necessário */

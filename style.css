@@ -1,0 +1,139 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Aplicando a família de fontes Roboto para o corpo do texto */
+}
+
+.content-container {
+    padding: 2% 10% 2% 10%; /* Recuo de do conteúdo */
+    margin: 0; /* Remover margem superior e inferior */
+    transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+/* Adicione um efeito de destaque no hover para as divs .content-container */
+.content-container:hover {
+    background-color: #f2f2f2; /* Cor de fundo ao passar o mouse */
+    transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #000; /* Fundo preto */
+}
+
+/* Cor de fundo para h1, h2 e h3 */
+h2 {
+    background-color: #f2f2f2; /* Cor de fundo da sua div */
+    color: #000; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno para melhorar a legibilidade */
+}
+
+
+.paragraph {
+    margin-bottom: 10px; /* Espaçamento entre parágrafos */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px; /* Espaçamento vertical de 10px entre os itens da lista */
+}
+
+/* Conteúdo do cabeçalho */
+.perfil img {
+    border-radius: 50%;
+    width: 15%; /* A imagem ocupará 10% da largura do display */
+    max-width: 150px; /* Defina um valor máximo para a largura da imagem, se necessário */
+    height: auto; /* Mantenha a proporção da imagem */
+    margin: 0 auto;
+}
+.perfil h1 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 500; /* Peso 500 para o título */
+    color: #fff; /* Texto branco */
+}
+
+/* Subtítulo */
+.perfil p {
+    color: #888;
+    font-weight: 400; /* Peso 400 para o subtítulo */
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: rgb(242, 210, 2); /* Links em amarelo */
+    margin: 0 10px;
+    font-size: 18px; /* Tamanho maior para os links */
+}
+
+/* Propriedades de formatação de textos, espacamentos e alinhamento */
+.intro {
+    text-align: justify; /* Justificar o texto */
+    text-indent: 20px; /* Recuo na primeira linha */
+    background-color: #f2f2f2; /* Fundo cinza */
+    color: #000; /* Texto preto */
+    font-size: 0.9rem;
+}
+
+.formacao {
+    text-align: justify; /* Justificar o texto */
+    background-color: #fafafa; /* Fundo cinza */
+    color: #000000; /* Texto preto */
+}
+
+/* Estilos para as divs */
+.capacitacao, .certificacoes, .cursos, .hardskills, .softskills {
+    font-size: 0.8rem; /* 1rem é igual ao tamanho de fonte padrão do navegador */
+    padding: 2% 2% 2% 2%; /* Recuo de do conteúdo */
+}
+
+.content-container.container-pair {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as divs quebrem para a próxima linha, se necessário */
+}
+
+.content-container.capacitacao, 
+.content-container.certificacoes,
+.content-container.hardskills,
+.content-container.softskills {
+    flex: 1; /* Distribui o espaço disponível igualmente entre as divs */
+    margin-right: 2%; /* Define a margem direita para criar espaço entre as divs */
+}
+
+/* Estilos para as barras de habilidades */
+.skill-bar {
+    display: inline-block; /* Mantém as barras lado a lado */
+    vertical-align: top;
+    width: calc(50% - 1%); /* Distribui igualmente o espaço disponível com uma pequena margem entre elas */
+    margin-right: 1%;
+}
+
+.skill-level {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-indent: 20px;
+    font-size: 0.8rem;
+}
+
+/* Estilos para o container de skills */
+.skills-container {
+    display: flex; /* Torna os containers de hard skills e soft skills flexíveis */
+    flex-wrap: wrap; /* Permite que eles quebrem para a próxima linha, se necessário */
+}
+
+.footer {
+    font-size: 0.8rem; /* 1rem é igual ao tamanho de fonte padrão do navegador */
+    background-color: #000;
+    padding: 2% 2% 2% 2%; /* Recuo de do conteúdo */
+    color: #fff;
+    text-align: center;
+}
+
