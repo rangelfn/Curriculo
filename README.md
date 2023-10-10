@@ -20,4 +20,4 @@ Este projeto tem como objetivo apresentar meu perfil profissional e acadêmico d
 1. Clone este repositório em seu ambiente de desenvolvimento local:
 
    ```bash
-   git clone https://github.com/seu-usuario/meu-portfolio.git
+   git clone https://github.com/rangelfn/Curriculo
