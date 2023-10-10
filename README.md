@@ -1,4 +1,4 @@
-# Meu Portfólio Pessoal
+# Meu Curriculo
 
 ![Rangel Nepomuceno](assets/avatar.png)
 
