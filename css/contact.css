@@ -1,0 +1,126 @@
+/* Reset de estilos padrão para elementos HTML */
+html, body, div, h3, p, a, input, label, span, textarea, i {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.contact-info {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+  margin: 10px;
+}
+
+.contact-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 50%;
+  margin: 20px;
+}
+
+.title {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.information {
+  flex: 1;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+a {
+  color: #000;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.contact-form form {
+  text-align: center;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #000;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.input:focus + label, .input:valid + label {
+  top: -10px;
+  font-size: 14px;
+}
+
+
+.btn {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #ffc107;
+}
