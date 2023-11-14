@@ -9,77 +9,80 @@ html, body, div, h3, p, a, input, label, span, textarea, i {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza no eixo horizontal */
+  align-items: center; /* Centraliza no eixo vertical */
+  max-width: 1200px;
+  margin: 50px auto;
 }
 
-.contact-info {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  width: 50%;
-  margin: 10px;
-}
-
+.form,
 .contact-form {
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 50%;
-  margin: 20px;
+  border-radius: 8px;
+  flex: 1;
+  margin-bottom: 20px; /* Espaço entre as divs */
+}
+
+.form {
+  margin-right: 20px;
 }
 
 .title {
-  color: #000;
+  color: #333;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .text {
-  color: #333;
+  color: #555;
+  font-size: 14px;
   margin-bottom: 20px;
 }
 
-.info {
+.info,
+.social-media {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
-.information {
-  flex: 1;
-  color: #000;
-  font-size: 16px;
-  text-align: center;
-}
-
-
+.information,
 .social-icons {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-a {
-  color: #000;
-  font-size: 24px;
-  margin: 0 10px;
+.information i,
+.social-icons a {
+  margin-right: 10px;
+  color: rgb(242, 210, 2); /* Ícones amarelos */
+}
+
+.social-media p {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #3498db;
   text-decoration: none;
 }
 
-.contact-form form {
-  text-align: center;
+/* Estilos do formulário de contato */
+
+.contact-form {
+  flex: 1;
 }
 
 .input-container {
@@ -90,37 +93,55 @@ a {
 .input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #000;
-  border-radius: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 label {
   position: absolute;
   top: 10px;
   left: 10px;
-  color: #000;
-  pointer-events: none;
-  transition: 0.2s;
-}
-
-.input:focus + label, .input:valid + label {
-  top: -10px;
+  color: #777;
   font-size: 14px;
+  pointer-events: none;
+  transition: 0.3s ease-out;
 }
 
+.input:focus + label,
+.input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 5px;
+  font-size: 12px;
+  color: #3498db;
+}
+
+span {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  color: #e74c3c;
+  font-size: 12px;
+  visibility: hidden;
+  transition: 0.3s ease-out;
+}
+
+.input:focus + label + span,
+.input:not(:placeholder-shown) + label + span {
+  top: 10px;
+  visibility: visible;
+}
 
 .btn {
-  background-color: #ffc107;
-  color: #000;
-  border: none;
-  border-radius: 4px;
+  background-color: #3498db;
+  color: #fff;
   padding: 10px 20px;
-  font-size: 16px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: 0.2s;
+  font-size: 16px;
 }
 
 .btn:hover {
-  background-color: #000;
-  color: #ffc107;
+  background-color: #2980b9;
 }

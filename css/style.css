@@ -141,3 +141,21 @@ li {
     text-align: center;
 }
 
+.content-container.experiencias table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .content-container.experiencias th,
+  .content-container.experiencias td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .content-container.experiencias th {
+    background-color: #f2f2f2;
+    color: #000;
+  }
+  
