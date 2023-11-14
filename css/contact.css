@@ -1,93 +1,64 @@
-/* Reset de estilos padrão para elementos HTML */
-html, body, div, h3, p, a, input, label, span, textarea, i {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  color: inherit;
-  background: transparent;
-}
-
+/* Estilos globais para o corpo da página */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+  margin: 0; /* Remover margens padrão */
+  padding: 0; /* Remover preenchimento padrão */
 }
 
+/* Container principal centralizado */
 .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Centraliza no eixo horizontal */
-  align-items: center; /* Centraliza no eixo vertical */
+  flex-direction: column; /* Empilha os filhos verticalmente */
+  justify-content: center;
+  align-items: center;
   max-width: 1200px;
   margin: 50px auto;
 }
 
-.form,
-.contact-form {
+/* Estilos para seções contato e formulário */
+.contato {
+  flex: 1;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 8px;
-  flex: 1;
-  margin-bottom: 20px; /* Espaço entre as divs */
+  margin-bottom: 20px;
+  width: 100%; /* Ocupar toda a largura disponível */
+  max-width: 800px; /* Limitar a largura para melhor leitura */
 }
 
-.form {
-  margin-right: 20px;
-}
-
+/* Estilos para títulos e textos */
 .title {
   color: #333;
   font-size: 24px;
-  margin-bottom: 10px;
+  padding: 5px;
+
 }
 
 .text {
   color: #555;
   font-size: 14px;
   margin-bottom: 20px;
+  text-align: justify;
+  padding: 5px;
 }
 
-.info,
-.social-media {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.information,
-.social-icons {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.information i,
-.social-icons a {
+.social-icons a, p {
+  color: #3498db; /* Adiciona cor aos ícones da rede social */
   margin-right: 10px;
-  color: rgb(242, 210, 2); /* Ícones amarelos */
-}
-
-.social-media p {
-  margin-bottom: 10px;
-}
-
-.social-icons a {
-  margin-right: 10px;
-  color: #3498db;
   text-decoration: none;
+  align-items: center;
 }
 
-/* Estilos do formulário de contato */
+/* Estilos específicos para o formulário de contato */
 
-.contact-form {
-  flex: 1;
-}
-
+/* Estilos para os campos de entrada e rótulos do formulário */
 .input-container {
   position: relative;
   margin-bottom: 20px;
+  width: 100%; /* Ocupar toda a largura disponível */
 }
 
 .input {
@@ -96,42 +67,27 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  color: #333333;
+  background-color: #fff;
+  box-sizing: border-box; /* Evita problemas de tamanho com padding e borda */
 }
 
 label {
   position: absolute;
-  top: 10px;
+  top: -10px;
   left: 10px;
   color: #777;
   font-size: 14px;
-  pointer-events: none;
-  transition: 0.3s ease-out;
+  background-color: #fff;
+  padding: 0 5px;
 }
 
-.input:focus + label,
-.input:not(:placeholder-shown) + label {
-  top: -10px;
-  left: 5px;
-  font-size: 12px;
-  color: #3498db;
+/* Adiciona algum espaçamento entre os rótulos e os inputs */
+.input-container label {
+  margin-right: 10px;
 }
 
-span {
-  position: absolute;
-  top: 30px;
-  left: 10px;
-  color: #e74c3c;
-  font-size: 12px;
-  visibility: hidden;
-  transition: 0.3s ease-out;
-}
-
-.input:focus + label + span,
-.input:not(:placeholder-shown) + label + span {
-  top: 10px;
-  visibility: visible;
-}
-
+/* Botão de envio do formulário */
 .btn {
   background-color: #3498db;
   color: #fff;
@@ -142,6 +98,14 @@ span {
   font-size: 16px;
 }
 
+/* Animação do botão ao passar o mouse */
 .btn:hover {
   background-color: #2980b9;
 }
+
+.confirmation-message {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333; /* Cor do texto */
+}
+
